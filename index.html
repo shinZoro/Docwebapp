@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Login</title>
+    <style>
+        .center-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .login-container2 {
+            position: fixed;
+            background-color: #fff;
+            display: flex;
+            max-width: 480px;
+            width: 100%;
+            flex-direction: column;
+            font-size: 15px;
+            color: rgba(0, 0, 0, 0.31);
+            font-weight: 600;
+            white-space: nowrap;
+            margin: 0 auto;
+            padding: 50px 47px;
+            
+        }
+        .login-logo2 {
+            aspect-ratio: 0.9;
+            object-fit: auto;
+            object-position: center;
+            width: 91px;
+            align-self: center;
+            margin-top: 101px;
+        }
+        .login-title2 {
+            color: rgba(0, 0, 0, 0.7);
+            align-self: center;
+            font: bold 25px Inter, sans-serif;
+        }
+        .input-container2, .password-container2 {
+            margin-left: 20px;
+            margin-right: 20px;
+            border-radius: 22.5px;
+            border: 1px solid #ddb7ff;
+            background-color: #fff;
+            display: flex;
+            margin-top: 16px;
+            justify-content: space-between;
+            gap: 9px;
+            font-weight: 500;
+            padding: 12px 17px;
+        }
+        .input-icon2, .password-icon2 {
+            aspect-ratio: 1;
+            object-fit: auto;
+            object-position: center;
+            width: 22px;
+        }
+        .input-text2, .password-text2 {
+            font-family: Inter, sans-serif;
+            flex-grow: 1;
+            flex-basis: auto;
+            margin: auto 0;
+            outline: none;
+            border: 0;
+        }
+        .submit-button2 {
+            border-radius: 22.5px;
+            border: 1px solid #ddb7ff;
+            background-color: #ddb7ff;
+            margin-top: 31px;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            padding: 15px 60px;
+            font: bold 20px Inter, sans-serif;
+            cursor: pointer;
+        }
+        .visually-hidden2 {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            border: 0;
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+        }
+        .custom-alert {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            }
+
+        .custom-alert-content {
+            margin-bottom: 10px;
+            }
+
+        #customAlertCloseBtn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="center-container">
+    <main class="login-container2">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a392e3701c5865071b76b9ad76ffc1526e4ee223302d5371d324f8c128d84073?apiKey=ad6d7a72be5446ff91620e5d42e32809&" class="login-logo2" alt="Doctor Login Logo" />
+        <h1 class="login-title2">Doctor Login</h1>
+        <form>
+            <div class="input-container2">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a5e3f70d41385b1aedb591f7d06328359c730a3fd5b33329ffa7bb045c90df26?apiKey=ad6d7a72be5446ff91620e5d42e32809&" class="input-icon" alt="Username Icon" />
+                <label for="usernameInput" class="visually-hidden2">Username</label>
+                <input type="text" id="usernameInput" class="input-text2" aria-label="Username" placeholder="Username" />
+            </div>
+            <div class="password-container2">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/336b228a91ea247a3ca67afc5b62c6c88692f109fa0f57a0cac450470adf01e0?apiKey=ad6d7a72be5446ff91620e5d42e32809&" class="password-icon" alt="Password Icon" />
+                <label for="passwordInput" class="visually-hidden2">Password</label>
+                <input type="password" id="passwordInput2" class="password-text2" aria-label="Password" placeholder="Password" />
+            </div>
+            <center><button type="submit" class="submit-button2">Submit →</button></center>
+        </form>
+    </main>
+    <div id="customAlert" class="custom-alert">
+        <div class="custom-alert-content">
+            <span id="customAlertMessage"></span>
+            <button id="customAlertCloseBtn">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</div>
+</body>
+</html>

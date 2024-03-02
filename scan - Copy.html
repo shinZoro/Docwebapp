@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Enhanced Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container">
+        <section class="greeting">
+            <div>
+                <h1 class="welcome-message">Welcome</h1>
+                <h2 class="user-name">Dr. Rohan</h2>
+            </div>
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/61bf534de4353f62079b8209834a49701064a5b971d2895672288cc5490060f4?apiKey=ad6d7a72be5446ff91620e5d42e32809&"
+                 alt="User Thumbnail"
+                 class="user-thumbnail">
+        </section>
+        <section class="action-section">
+            <img style = "padding-bottom: 60px;" src="Group 2.png"
+                 alt="QR Scanning illustration"
+                 class="action-image">
+            <button id="scanButton" class="scan-button" tabindex="0">SCAN</button>
+            </section>
+            
+            <div class="scan-section">
+                    <div id="my-qr-reader">
+                    </div>
+                </div>
+            </div>
+            <script
+                src="https://unpkg.com/html5-qrcode">
+            </script>
+            <script src="script.js"></script>
+        </section>
+        <div class="alternative-text">[OR]</div>
+        <form class="form-container">
+            <label for="qrInput" class="visually-hidden">Enter QR number</label>
+            <input type="text" id="qrInput" class="form-input" placeholder="Enter QR number" aria-label="Enter QR number">
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </header>
+</body>
+</html>
